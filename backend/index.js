@@ -7,6 +7,7 @@ const taskRoutes = require('./routes/task');
 const userRoutes = require('./routes/user')
 const Connected = require('./config/db')
 
+
 const app = express();
 app.use(express.json());
 app.use(cors());

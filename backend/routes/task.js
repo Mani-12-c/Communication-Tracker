@@ -1,8 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const Task = require('../models/task');
-const Company = require('../models/company');
-const Method = require('../models/method');
 
 // Get tasks for a specific company
 router.get('/company/:companyId', async (req, res) => {
