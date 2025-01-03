@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://communication-tracker-backend.vercel.app/' });
+const API = axios.create({ baseURL: 'https://communication-tracker-backend.vercel.app/api' });
 
 API.interceptors.request.use((config) => {
     const token = localStorage.getItem('token');
