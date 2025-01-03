@@ -10,6 +10,6 @@ const companySchema = new mongoose.Schema({
   communicationPeriodicity: { type: String, required: false },
 });
 
-const Company = mongoose.models.Company || mongoose.model('Company', companySchema);
+const Company = mongoose.models.Company ;
 
 module.exports = Company;

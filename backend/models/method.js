@@ -8,4 +8,4 @@ const methodSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now },
 });
 
-const Company = mongoose.models.Method || mongoose.model('Method', methodSchema);
+const Company = mongoose.models.Method ;
