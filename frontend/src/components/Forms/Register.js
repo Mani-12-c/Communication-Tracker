@@ -14,7 +14,7 @@ function Register() {
         e.preventDefault();
         
         try {
-          const response = await axiosInstance.post('/users/register',{
+          const response = await axiosInstance.post('/register',{
             username,
             email,
             password
