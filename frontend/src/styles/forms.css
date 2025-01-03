@@ -1,0 +1,102 @@
+
+.f-container {
+    font-family: "Playfair", serif;
+    font-style: italic;
+    width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: linear-gradient(45deg, #EEEDED,#EEEDED);
+
+}
+.center {
+  position: relative;
+  padding: 3rem;
+  background: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 10px;
+}
+.center h1 {
+  font-size: 1.4em;
+  border-left: 5px solid dodgerblue;
+  padding: 5px;
+  color: #000;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+.center .inputbox {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 30px;
+  margin-right: 10px;
+}
+.center .inputbox input,textarea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 7px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+
+
+
+
+.center .inputbox:last-child {
+  margin-bottom: 0;
+}
+.center .inputbox span {
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  font-size: 1em;
+  transition: 0.6s;
+  font-family: sans-serif;
+}
+.center .inputbox input:focus ~ span,
+.center .inputbox input:valid ~ span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 1em;
+}
+.center .inputbox textarea:focus ~ span,
+.center .inputbox textarea:valid ~ span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 1em;
+}
+.center .inputbox [type="submit"] {
+  width: 50%;
+  background: dodgerblue;
+  color: #fff;
+  border: #fff;
+}
+.center .inputbox:hover [type="submit"] {
+  background: linear-gradient(45deg, #eee6e6, dodgerblue);
+}
+
+.form-text{
+    display: flex;
+    justify-content: space-between;
+    font-size:larger;
+    text-decoration: none;
+}
+
+.form-text a{
+    text-decoration: none;
+}
+
+.input-flex{
+    display: flex;
+    justify-content: space-between;
+    
+}

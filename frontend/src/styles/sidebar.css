@@ -1,0 +1,66 @@
+/* src/styles/main.css */
+.sidebar.Open {
+    position: fixed;
+    height: 100%;
+    display: none;
+    top: 65px;
+    background-color: #9DB2BF;
+    backdrop-filter: blur(30px) saturate(2);
+    transition: 2.2s cubic-bezier(.36,-0.01,0,.77);    z-index: 1000;
+    right: 0;
+  }
+  
+  .sidebar.Close {
+    position: fixed;
+    height: 100%;
+    top: 65px;
+    background-color: #9DB2BF;
+    transition: right .1s ease;
+    z-index: 1000;
+    right: 0;
+  }
+  
+  .hamburger {
+    position: relative;
+    top: -10px;
+    padding-left: 15px;
+    cursor: pointer;
+    font-size: 24px; 
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block; 
+    }
+  
+    .navbar-links {
+      display: none; 
+    }
+  }
+
+  .sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    position: fixed;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 1rem 0;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #007bff;
+  }
+  
