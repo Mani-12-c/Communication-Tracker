@@ -17,6 +17,9 @@ Connected()
 
 
 // Routes
+app.get('/', (req, res) => {
+    res.send('Hello');
+  });
 app.use('/api/users', userRoutes);
 app.use('/api/companies', companyRoutes);
 app.use('/api/methods', methodRoutes);
