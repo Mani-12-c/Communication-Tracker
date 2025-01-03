@@ -16,7 +16,7 @@ const Login = () => {
 
     try {
       console.log(email)
-      const response = await axiosInstance.post('/users/login', { email, password });
+      const response = await axiosInstance.post('/login', { email, password });
       localStorage.setItem('token', response.data.token);
       setUser (response.data.role);
       alert('Logged in successfully ');
