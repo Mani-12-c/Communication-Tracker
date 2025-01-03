@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: 'http://127.0.0.1:5000/api/users/', 
+  baseURL: 'https://communication-tracker-backend.vercel.app/api/users/', 
 });
 
 axiosInstance.interceptors.request.use(
