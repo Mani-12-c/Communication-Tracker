@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Method = require('../models/Method');
+const Method = require('../models/method');
 
 // Get all communication methods
 router.get('/', async (req, res) => {

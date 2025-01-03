@@ -1,14 +1,15 @@
 const mongoose = require('mongoose');
 
 const companySchema = new mongoose.Schema({
-  name: { type: String, required: true, unique: true },
-  location: String,
-  linkedinProfile: String,
-  emails: [String],
-  phoneNumbers: [String],
-  comments: String,
-  communicationPeriodicity: { type: Number, default: 14 },
-  createdAt: { type: Date, default: Date.now },
+  name: { type: String, required: true },
+  location: { type: String, required: true },
+  linkedinProfile: { type: String, required: false },
+  emails: { type: [String], required: true },
+  phoneNumbers: { type: [String], required: true },
+  comments: { type: String, required: false },
+  communicationPeriodicity: { type: String, required: false },
 });
 
-module.exports = mongoose.model('Company', companySchema);
+const Company = mongoose.models.Company || mongoose.model('Company', companySchema);
+
+module.exports = Company;
