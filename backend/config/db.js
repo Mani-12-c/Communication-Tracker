@@ -6,7 +6,7 @@ const connectDB = async()=>{
         //     useUnifiedTopology: true,
         //   });
         
-        const conn = await mongoose.connect('mongodb+srv://manikanta3790:Hellobee%40123@cluster0.iz59v.mongodb.net/');
+        const conn = await mongoose.connect('mongodb+srv://manikanta66:Hellobee%40123@cluster0.ebkkkrc.mongodb.net/');
         console.log(`mongoDB coonected : ${conn.connection.host}`);
     }
     catch(error){
